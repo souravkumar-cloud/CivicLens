@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-const API_URL = "http://127.0.0.1:8000/api/v1";
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1";
 
 type Source = {
   source_id: string | number;
